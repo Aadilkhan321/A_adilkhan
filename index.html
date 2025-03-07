@@ -3,91 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Clone</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>My Name is Aadil</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #141414;
-            color: white;
-        }
-        .header {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-            background: rgba(0, 0, 0, 0.7);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 100;
-        }
-        .header img {
-            width: 150px;
-        }
-        .banner {
-            background: url('https://assets.nflxext.com/ffe/siteui/vlv3/5eb2d1a1-99e6-4d40-b207-618b21fa3324/8e5f9317-c349-47d8-bd3d-214f07c50a78/US-en-20230424-popsignuptwoweeks-perspective_alpha_website_medium.jpg') no-repeat center center/cover;
-            height: 600px;
-            display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+            font-family: 'Arial', sans-serif;
+        }
+
+        .name-container {
             text-align: center;
-            flex-direction: column;
-            padding: 20px;
+            color: #fff;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 2s ease-in-out;
         }
-        .banner h1 {
-            font-size: 3rem;
-            max-width: 700px;
+
+        h1 {
+            font-size: 4rem;
+            margin: 0;
         }
-        .banner p {
-            font-size: 1.2rem;
-            max-width: 600px;
+
+        h1 span {
+            background: linear-gradient(45deg, #ff6a00, #ffde00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-        .movies {
-            padding: 20px;
+
+        p {
+            font-size: 1.5rem;
+            margin: 10px 0 0;
         }
-        .movies h2 {
-            margin-left: 20px;
-        }
-        .movie-row {
-            display: flex;
-            overflow-x: auto;
-            padding: 10px;
-        }
-        .movie {
-            width: 200px;
-            margin-right: 10px;
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-        .movie:hover {
-            transform: scale(1.1);
-        }
-        .movie img {
-            width: 100%;
-            border-radius: 5px;
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="Netflix Logo">
-        <button>Sign In</button>
-    </div>
-    <div class="banner">
-        <h1>Unlimited movies, TV shows, and more.</h1>
-        <p>Watch anywhere. Cancel anytime.</p>
-    </div>
-    <div class="movies">
-        <h2>Popular on Netflix</h2>
-        <div class="movie-row">
-            <div class="movie"><img src="https://image.tmdb.org/t/p/w500/xJHokMbljvjADYdit5fK5VQsXEG.jpg" alt="Movie"></div>
-            <div class="movie"><img src="https://image.tmdb.org/t/p/w500/6agKYU5IQFpuDyUYPu39w7UCRrJ.jpg" alt="Movie"></div>
-            <div class="movie"><img src="https://image.tmdb.org/t/p/w500/q719jXXEzOoYaps6babgKnONONX.jpg" alt="Movie"></div>
-            <div class="movie"><img src="https://image.tmdb.org/t/p/w500/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg" alt="Movie"></div>
-        </div>
+    <div class="name-container">
+        <h1>My Name is <span>Aadil</span></h1>
+        <p>Welcome to my creative space!</p>
     </div>
 </body>
 </html>
